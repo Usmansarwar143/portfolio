@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Usman Webpage</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			height: 100%;
+			background-color: black;
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		header{
+			width: 100%;
+			height: 8%;
+			display: flex;
+			background-color: black;
+			gap: 15px;
+			align-items: center;
+			position: sticky;
+		}
+		.menu_button{
+			height: 40px;
+			width: 40px;
+			position: relative;
+			filter:drop-shadow(0 0 5px white);
+		}
+		h2{
+			color: white;
+			font-size: 30px;
+			font-family: ;
+			position: relative;
+		}
+		.first{
+			height:100vh;
+			width:100%;
+			background-color:#0C0C0C; 
+		}
+		.first ul{
+			display: flex;
+			justify-content: space-between;
+			margin-left: 30px;
+		}
+		.first ul li{
+			list-style: none;
+			color: orange;
+			font-size: 15px;
+			padding: 0 20px;
+			font-variant: small-caps;
+			transition: 0.5s;
+		}	
+		.first ul li:hover{
+			border-bottom: 2px solid orange;
+			padding: 0 0;
+			font-size: 18px;
+			font-style: bold;
+			color: yellow;
+		}
+		.contact{
+			background-color:orange;
+			color: black;
+			border: 1px solid black;
+			border-radius: 10%;
+			height: 30px;
+			width: 100px;
+			margin-left: 50px;
+		}
+		.three_boxes{
+			flex:1;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.left .my_pic .right{
+			width: 33.33%;
+			height: 92%;
+			position: relative;
+		}
+		.left p, .right p{
+			color: white;
+		}
+		.left h1{
+			transform: translate(310px,-100px);
+		}
+		.right h1{
+			transform: translate(-332px,-100px);
+			position: relative;
+            z-index: -1;
+		}
+		.right,  .left{
+			z-index: 0;
+		}
+		.right h1, .left h1{
+			color: cyan;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bolder;
+		}
+		.my_pic:hover .name{
+			transform: translate(160px,-100px);
+			font-size:40px;
+		}
+		.my_pic:hover .surname{
+			transform: translate(-180px,-100px);
+			font-size:40px;
+		}
+		.my_pic img{
+			filter: drop-shadow(0px 40px 40px #212427);
+			z-index: 1;
+			position: relative;
+			transition: all 0.5s ease-in-out;
+		}
+	</style>
+	</head>
+		<body>
+			<div class="first">
+				<header>
+					<div>
+						<img class="menu_button" src="menu_button.png">
+					</div>
+					<h2><span style="color:orange">Usman </span> Sarwar</h2>
+					<div>
+						<ul>
+							<li>Home</li>
+							<li>About</li>
+							<li>Skills</li>
+							<li>Experience</li>
+							<li>Education</li>
+							<li>Services</li>
+							<li>Projects</li>
+							<li>Blog</li>
+						</ul>
+					</div>
+					<button class="contact">Contact Me!</button>
+				</header>
+				<div class="three_boxes">
+					<div class="left">
+						<h1 class="name">USMAN</h1>
+						<p>I,m Computer Engineer</p>
+						<button>LinkedIn</button>
+					</div>
+					<div class="my_pic">
+						<img  src="my_pic.png">
+					</div>
+					<div class="right">
+						<h1 class="surname">SARWAR</h1>
+						<p>I,m Computer Engineer</p>
+						<button>Download CV</button>
+					</div>
+				</div>
+			</div>
+		</body>
+</html>
