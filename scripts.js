@@ -283,6 +283,20 @@ const projects = [
     img: "assets/auto_toll_barrier.jpeg",
     link: "https://www.linkedin.com/posts/muhammad-usman-018535253_engineeringexcellence-arduinoprojects-innovationintech-activity-7180985083112132608-jOI5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6MgNQBNQDogo2uGw8r1errf-OJEuJH4dc",
     tags: ["iot-embedded"]
+  },
+  {
+    title: "Chronos AI",
+    desc: "A dual-memory RAG system (ChromaDB + Mistral-7B) for long-term context retention across multi-session chats.",
+    img: "assets/my_pic.png",
+    link: "#",
+    tags: ["ml"]
+  },
+  {
+    title: "Ascend AI",
+    desc: "An automated roadmapping pipeline using Llama 3, Qwen, and Gemma via a two-stage Flask setup.",
+    img: "assets/my_pic.png",
+    link: "#",
+    tags: ["ml", "web", "python"]
   }
 ];
 function renderProjects(filter = 'all') {
@@ -342,8 +356,9 @@ const certificates = [
   { title: "C++", img: "assets/cert_cpp.jpeg" },
   { title: "Web Scraping", img: "assets/cert_web_scraping.jpeg" },
   { title: "BootStrap", img: "assets/cert_bootstrap.jpeg" },
-  { title: "Git & GitHub", img: "assets/cert_git.jpeg" }
-
+  { title: "Git & GitHub", img: "assets/cert_git.jpeg" },
+  { title: "GenAI App Development", img: "assets/cert_ml.jpeg" },
+  { title: "Co-Trainer | Gen AI Workshop", img: "assets/cert_ml2.jpeg" }
 ];
 function renderCertificates() {
   const slider = document.getElementById('certificates-slider');
