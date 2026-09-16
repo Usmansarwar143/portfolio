@@ -308,14 +308,14 @@ const projects = [
   {
     title: "Chronos AI",
     desc: "A dual-memory RAG system (ChromaDB + Mistral-7B) for long-term context retention across multi-session chats.",
-    img: "assets/my_pic.png",
+    img: "assets/image3.png",
     link: "#",
     tags: ["ml"]
   },
   {
     title: "Ascend AI",
     desc: "An automated roadmapping pipeline using Llama 3, Qwen, and Gemma via a two-stage Flask setup.",
-    img: "assets/my_pic.png",
+    img: "assets/image3.png",
     link: "#",
     tags: ["ml", "web", "python"]
   }
