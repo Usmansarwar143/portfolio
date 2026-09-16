@@ -193,13 +193,34 @@ function animateCounter(id, target) {
   update();
 }
 window.addEventListener('load', () => {
-  animateCounter('projects-count', 11);
+  animateCounter('projects-count', 17);
   animateCounter('workshops-count', 7);
-  animateCounter('certificates-count', 10);
+  animateCounter('certificates-count', 12);
 });
 
 // Projects Data
 const projects = [
+  {
+    title: "Pearls AQI Predictor",
+    desc: "A 100% serverless, end-to-end MLOps pipeline on GCP/Vertex AI and Hopsworks to forecast 3-day Air Quality Index with automated CI/CD retraining via GitHub Actions.",
+    img: "assets/pearls_aqi_predictor.jpg",
+    link: "#",
+    tags: ["ml", "web"]
+  },
+  {
+    title: "SafeDrive AI (FYP)",
+    desc: "A real-time 5-class edge vision system using YOLOv8n-cls, NCNN, OpenCV, and Raspberry Pi 4, enabling 100% offline driver anomaly detection with GradCAM explainability.",
+    img: "assets/safedrive_ai.jpg",
+    link: "#",
+    tags: ["ml", "iot-embedded"]
+  },
+  {
+    title: "COVID-19 CT Scan Classification",
+    desc: "A VGG16 transfer learning model in TensorFlow/Keras on 4,962 CT scans, achieving 96.48% accuracy, 0.97 F1-score, and +1.52% over the baseline.",
+    img: "assets/covid_ct_scan.jpg",
+    link: "#",
+    tags: ["ml"]
+  },
   {
     title: "U-Care Bot",
     desc: "A friendly mental health chatbot using sentiment analysis and AI-driven conversation.",

@@ -1715,3 +1715,116 @@ nav#navbar {
     height: 15px;
   }
 }
+
+/* Publications Section */
+.publications-section {
+  margin: 3rem auto;
+  max-width: 1100px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.publications-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publication-card {
+  padding: 2rem 2rem 1.8rem;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.publication-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  border-radius: 4px 4px 0 0;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(58, 134, 255, 0.18);
+}
+
+.publication-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.18);
+}
+
+.publication-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.publication-desc {
+  color: var(--text);
+  line-height: 1.6;
+  opacity: 0.9;
+  font-size: 0.98rem;
+  margin-bottom: 1.2rem;
+}
+
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pub-tag {
+  display: inline-block;
+  background: var(--glass-bg);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pub-tag:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .publications-section {
+    padding: 1.2rem 0.5rem;
+  }
+
+  .publication-card {
+    padding: 1.2rem 1rem 1rem;
+  }
+
+  .publication-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .publication-desc {
+    font-size: 0.9rem;
+  }
+
+  .pub-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
