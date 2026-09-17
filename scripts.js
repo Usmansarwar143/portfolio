@@ -37,11 +37,11 @@ function typewriterEffect(element, texts, speed = 60, pause = 1200) {
 const typewriter = document.getElementById('typewriter');
 if (typewriter) {
   typewriterEffect(typewriter, [
-    "Assalamualaikum Guys!",
+    "Assalamualaikum!",
     "I'm Usman Sarwar",
-    "A Computer Systems Engineer",
-    "An AI/ML Enthusiast",
-    "Innovative. Passionate. Professional.",
+    "The AI Engineer",
+    "GenAI Builder",
+    "LLM Architect",
     "A Quantum Computing Enthusiast"
   ]);
 }
