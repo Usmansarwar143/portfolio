@@ -8,9 +8,9 @@
   
   /* Skeuomorphic Variables */
   --panel-bg: #E8D8C3;
-  --shadow-light: #ffffff;
-  --shadow-dark: #d1c3b0;
-  --border: rgba(42, 33, 29, 0.08);
+  --shadow-light: rgba(15, 76, 92, 0.05);
+  --shadow-dark: rgba(15, 76, 92, 0.15);
+  --border: rgba(15, 76, 92, 0.1);
   --shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
   --inner-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
 }
@@ -156,8 +156,9 @@ nav#navbar {
   justify-content: space-between;
   padding: 1rem 2rem;
   margin: 1rem auto;
-  max-width: 1200px;
-  background: var(--glass-bg);
+  max-width: 1400px;
+  width: 95%;
+  background: var(--panel-bg);
 }
 
 .nav-logo {
@@ -181,8 +182,9 @@ nav#navbar {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.2rem;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
@@ -1435,11 +1437,11 @@ nav#navbar {
   width: 280px;
   height: 280px;
   border-radius: 20px;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: bottom center;
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
-  background: var(--panel-bg);
+  background: transparent;
   transition: all 0.3s ease;
 }
 
