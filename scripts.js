@@ -8,20 +8,7 @@ window.addEventListener('load', () => {
   }, 1200);
 });
 
-// Dark/Light Mode Toggle
-const toggleMode = document.getElementById('toggle-mode');
-const html = document.documentElement;
-const theme = localStorage.getItem('theme') || 'light';
-if (theme === 'dark') html.setAttribute('data-theme', 'dark');
-toggleMode.onclick = () => {
-  if (html.getAttribute('data-theme') === 'dark') {
-    html.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  } else {
-    html.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  }
-};
+
 
 // Typewriter Animation
 function typewriterEffect(element, texts, speed = 60, pause = 1200) {

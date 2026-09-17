@@ -1,13 +1,15 @@
 /* Skeuomorphic Portfolio Styles for Usman Sarwar */
 :root {
-  --primary: #0F4C5C; /* Deep Petrol Teal */
-  --secondary: #E8D8C3; /* Warm Sand */
-  --accent: #C47A5A; /* Muted Copper */
-  --bg: #F7F3ED; /* Ivory */
-  --text: #2A211D; /* Espresso */
+  --primary: #0F4C5C;
+  --secondary: #E8D8C3;
+  --accent: #C47A5A;
   
-  /* Skeuomorphic Variables */
-  --panel-bg: #E8D8C3;
+  --bg: #FFFFFF;
+  --text: #000000;
+  
+  --panel-bg: #0F4C5C;
+  --primary-text-on-dark: #E8D8C3;
+  
   --shadow-light: rgba(15, 76, 92, 0.05);
   --shadow-dark: rgba(15, 76, 92, 0.15);
   --border: rgba(15, 76, 92, 0.1);
@@ -110,16 +112,7 @@
   transform: translateY(0) scale(1);
 }
 
-[data-theme="dark"] {
-  --bg: #2A211D; /* Espresso */
-  --text: #F7F3ED; /* Ivory */
-  --panel-bg: #322822; /* Lighter Espresso */
-  --shadow-light: #44362e;
-  --shadow-dark: #16110f;
-  --border: rgba(247, 243, 237, 0.05);
-  --shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
-  --inner-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
-}
+
 
 * {
   box-sizing: border-box;
@@ -205,7 +198,7 @@ nav#navbar {
   bottom: -4px;
   height: 3px;
   border-radius: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
   z-index: 1;
@@ -255,9 +248,7 @@ nav#navbar {
   background: var(--bg);
 }
 
-[data-theme="dark"] .hero-section {
-  background: var(--bg);
-}
+
 
 #bg-animation {
   position: absolute;
@@ -830,7 +821,7 @@ nav#navbar {
   bottom: -80px;
   width: 260px;
   height: 260px;
-  background: radial-gradient(circle at 60% 60%, var(--primary) 0%, transparent 100%);
+  background: var(--accent) 0%, transparent 100%);
   border-radius: 50%;
   z-index: 1;
   filter: blur(12px);
@@ -1152,13 +1143,11 @@ nav#navbar {
   overflow: hidden;
 }
 
-[data-theme="dark"] .skill-bar {
-  background: #23272f;
-}
+
 
 .skill-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   border-radius: 6px;
   transition: width 1s;
 }
@@ -1212,7 +1201,7 @@ nav#navbar {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -1233,7 +1222,7 @@ nav#navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   border-radius: 12px;
   position: relative;
 }
@@ -1252,7 +1241,7 @@ nav#navbar {
   font-weight: 700;
   margin-bottom: 0.8rem;
   color: var(--text);
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1503,7 +1492,7 @@ nav#navbar {
   gap: 0.5 rem;
   font-weight: 600;
   font-size: 1.1rem;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1514,7 +1503,7 @@ nav#navbar {
 }
 
 .resume-download-btn:hover {
-  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  background: var(--accent), var(--primary));
   color: #fff;
   transform: translateY(-2px) scale(1.04);
 }
@@ -1551,7 +1540,7 @@ nav#navbar {
   gap: 0.5 rem;
   font-weight: 600;
   font-size: 1.1rem;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1559,7 +1548,7 @@ nav#navbar {
   margin-bottom: 0.7rem;
   box-shadow: var(--shadow);
   transition: background 0.2s, transform 0.2s;
-  /* background: linear-gradient(90deg, var(--secondary), var(--primary));
+  /* background: var(--accent), var(--primary));
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1574,7 +1563,7 @@ nav#navbar {
 }
 
 .work-btn:hover {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   color: #fff;
   transform: translateY(-2px) scale(1.04);
 }
@@ -1753,7 +1742,7 @@ nav#navbar {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  background: var(--accent), var(--secondary), var(--accent));
   border-radius: 4px 4px 0 0;
 }
 
@@ -1764,7 +1753,7 @@ nav#navbar {
 
 .publication-badge {
   display: inline-block;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--accent), var(--secondary));
   color: #fff;
   padding: 0.35rem 1rem;
   border-radius: 20px;
@@ -1836,4 +1825,35 @@ nav#navbar {
     font-size: 0.75rem;
     padding: 0.2rem 0.6rem;
   }
+}
+
+/* TEXT OVERRIDES FOR DARK PANELS */
+.project-card .project-title,
+.service-card h3,
+.contact-title,
+.publication-card h3,
+.timeline-content h3 {
+  color: var(--accent) !important;
+}
+
+.project-card .project-desc,
+.service-card p,
+.contact-message,
+.contact-details,
+.publication-desc,
+.timeline-content p,
+.contact-form-area input,
+.contact-form-area textarea {
+  color: var(--primary-text-on-dark) !important;
+}
+
+.contact-form-area input::placeholder,
+.contact-form-area textarea::placeholder {
+  color: rgba(232, 216, 195, 0.7) !important; /* Warm Sand with opacity */
+}
+
+.hero-brief,
+.hero-voice,
+.section-title {
+  color: var(--text) !important;
 }
