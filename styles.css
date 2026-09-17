@@ -1765,7 +1765,6 @@ nav#navbar {
 .publication-desc {
   color: var(--text);
   line-height: 1.6;
-  opacity: 0.9;
   font-size: 0.98rem;
   margin-bottom: 1.2rem;
 }
@@ -1779,19 +1778,20 @@ nav#navbar {
 
 .pub-tag {
   display: inline-block;
-  background: var(--panel-bg);
-  color: var(--primary);
-  border: 1px solid var(--primary);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary-text-on-dark);
+  border: 1px solid rgba(232, 216, 195, 0.3);
   padding: 0.25rem 0.75rem;
   border-radius: 16px;
   font-size: 0.82rem;
   font-weight: 600;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .pub-tag:hover {
-  background: var(--primary);
+  background: var(--accent);
   color: #fff;
+  border-color: var(--accent);
 }
 
 @media (max-width: 600px) {
