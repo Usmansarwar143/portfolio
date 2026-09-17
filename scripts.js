@@ -189,22 +189,22 @@ const projects = [
   {
     title: "Pearls AQI Predictor",
     desc: "A 100% serverless, end-to-end MLOps pipeline on GCP/Vertex AI and Hopsworks to forecast 3-day Air Quality Index with automated CI/CD retraining via GitHub Actions.",
-    img: "assets/pearls_aqi_predictor.jpg",
-    link: "#",
+    img: "assets/pearls_aqi_predictor.png",
+    link: "https://usmansarwar143.github.io/Pearls_AQI_Prediction/",
     tags: ["ml", "web"]
   },
   {
     title: "SafeDrive AI (FYP)",
     desc: "A real-time 5-class edge vision system using YOLOv8n-cls, NCNN, OpenCV, and Raspberry Pi 4, enabling 100% offline driver anomaly detection with GradCAM explainability.",
     img: "assets/safedrive_ai.jpg",
-    link: "#",
+    link: "https://github.com/Usmansarwar143/FYP-SafeDrive-AI",
     tags: ["ml", "iot-embedded"]
   },
   {
     title: "COVID-19 CT Scan Classification",
     desc: "A VGG16 transfer learning model in TensorFlow/Keras on 4,962 CT scans, achieving 96.48% accuracy, 0.97 F1-score, and +1.52% over the baseline.",
     img: "assets/covid_ct_scan.jpg",
-    link: "#",
+    link: "https://github.com/Usmansarwar143/corona-detector",
     tags: ["ml"]
   },
   {
@@ -294,15 +294,15 @@ const projects = [
   {
     title: "Chronos AI",
     desc: "A dual-memory RAG system (ChromaDB + Mistral-7B) for long-term context retention across multi-session chats.",
-    img: "assets/image3.png",
-    link: "#",
+    img: "assets/chronos-ai.png",
+    link: "https://github.com/Usmansarwar143/chronos-ai",
     tags: ["ml"]
   },
   {
     title: "Ascend AI",
     desc: "An automated roadmapping pipeline using Llama 3, Qwen, and Gemma via a two-stage Flask setup.",
-    img: "assets/image3.png",
-    link: "#",
+    img: "assets/ascend-ai.png",
+    link: "https://www.linkedin.com/posts/muhammad-usman-sarwar-018535253_ai-artificialintelligence-python-activity-7458959304566616064-uCy7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6MgNQBNQDogo2uGw8r1errf-OJEuJH4dc",
     tags: ["ml", "web", "python"]
   }
 ];
