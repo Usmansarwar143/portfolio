@@ -944,7 +944,7 @@ nav#navbar {
   display: block;
   height: 4px;
   width: 100%;
-  background: var(--primary);
+  background: var(--accent); /* Changed from primary to accent to be visible on dark navbar */
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -1272,7 +1272,6 @@ nav#navbar {
 
 @media (max-width: 600px) {
   nav#navbar {
-    flex-direction: column;
     gap: 1rem;
     padding: 0.7rem 1rem;
   }
