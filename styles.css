@@ -893,7 +893,7 @@ nav#navbar {
 .loader-logo {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #fff;
   letter-spacing: 0.2em;
   background: var(--panel-bg);
   padding: 1.5rem 2.5rem;
@@ -1427,9 +1427,9 @@ nav#navbar {
 
 .hero-img,
 .about-img {
-  width: 350px;
-  height: 350px;
-  border-radius: 20px;
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
   background: var(--primary);
@@ -1462,17 +1462,17 @@ nav#navbar {
 @media (max-width: 900px) {
   .hero-img,
   .about-img {
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
   }
 }
 
 @media (max-width: 600px) {
   .hero-img,
   .about-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 16px;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
   }
 }
 
