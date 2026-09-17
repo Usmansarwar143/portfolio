@@ -456,7 +456,7 @@ nav#navbar {
 }
 
 .counter {
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   border-radius: 12px;
   padding: 1rem 1.5rem;
   box-shadow: var(--shadow);
@@ -482,7 +482,7 @@ nav#navbar {
 }
 
 .filter-btn {
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   border: none;
   border-radius: 8px;
   padding: 0.5rem 1.2rem;
@@ -608,7 +608,7 @@ nav#navbar {
 }
 
 .modal-content {
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   border-radius: 16px;
   padding: 1.5rem;
   max-width: 700px;
@@ -642,7 +642,7 @@ nav#navbar {
 
 .certificate-card {
   min-width: 260px;
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   border-radius: 12px;
   box-shadow: var(--shadow);
   padding: 1rem;
@@ -870,7 +870,7 @@ nav#navbar {
   padding: 1.5rem 0;
   font-size: 1rem;
   color: var(--text);
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   margin-top: 3rem;
 }
 
@@ -893,7 +893,7 @@ nav#navbar {
   font-weight: 800;
   color: var(--primary);
   letter-spacing: 0.2em;
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   padding: 1.5rem 2.5rem;
   border-radius: 24px;
   box-shadow: var(--shadow);
@@ -932,7 +932,7 @@ nav#navbar {
   object-fit: cover;
   border: 4px solid var(--primary);
   box-shadow: var(--shadow);
-  background: var(--glass-bg);
+  background: var(--panel-bg);
 }
 
 .hero-text {
@@ -1062,7 +1062,7 @@ nav#navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   border-radius: 12px;
   box-shadow: var(--shadow);
   padding: 1.2rem 1rem;
@@ -1182,7 +1182,7 @@ nav#navbar {
 }
 
 .service-card {
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -1472,7 +1472,7 @@ nav#navbar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   box-shadow: var(--shadow);
   font-size: 1.5rem;
   color: var(--primary);
@@ -1789,7 +1789,7 @@ nav#navbar {
 
 .pub-tag {
   display: inline-block;
-  background: var(--glass-bg);
+  background: var(--panel-bg);
   color: var(--primary);
   border: 1px solid var(--primary);
   padding: 0.25rem 0.75rem;
@@ -1828,6 +1828,18 @@ nav#navbar {
 }
 
 /* TEXT OVERRIDES FOR DARK PANELS */
+nav#navbar .nav-links a,
+.nav-usman {
+  color: var(--primary-text-on-dark) !important;
+}
+.nav-sarwar {
+  color: var(--accent) !important;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--accent) !important;
+}
+
 .project-card .project-title,
 .service-card h3,
 .contact-title,
@@ -1843,7 +1855,8 @@ nav#navbar {
 .publication-desc,
 .timeline-content p,
 .contact-form-area input,
-.contact-form-area textarea {
+.contact-form-area textarea,
+.footer {
   color: var(--primary-text-on-dark) !important;
 }
 
