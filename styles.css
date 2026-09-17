@@ -1405,18 +1405,16 @@ nav#navbar {
 }
 
 .hero-img {
-  width: 320px;
-  height: 320px;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
   background: var(--primary);
   transition: all 0.3s ease;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  position: relative;
 }
 
 .hero-img img {
@@ -1437,15 +1435,13 @@ nav#navbar {
 
 @media (max-width: 900px) {
   .hero-img {
-    width: 240px;
-    height: 240px;
+    max-width: 240px;
   }
 }
 
 @media (max-width: 600px) {
   .hero-img {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
   }
 }
 
