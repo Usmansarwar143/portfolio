@@ -41,8 +41,7 @@ if (typewriter) {
     "I'm Usman Sarwar",
     "The AI Engineer",
     "GenAI Builder",
-    "LLM Architect",
-    "A Quantum Computing Enthusiast"
+    "LLM Architect"
   ]);
 }
 // Section headers typewriter

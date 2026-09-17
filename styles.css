@@ -1911,3 +1911,338 @@ nav#navbar .nav-links a,
 .section-title {
   color: var(--text) !important;
 }
+
+/* ============================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   ============================================ */
+
+/* --- Prevent horizontal overflow everywhere --- */
+html, body {
+  overflow-x: hidden;
+}
+
+img, video, iframe, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Tablet: 768px-900px --- */
+@media (max-width: 900px) {
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-text {
+    text-align: center;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .hero-contacts {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .about-text {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .counters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* --- Small Tablet / Large Phone: 600px-768px --- */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    border-radius: 18px;
+  }
+
+  .contact-info {
+    border-right: none;
+    border-bottom: 1.5px solid var(--border);
+    padding-right: 0;
+    padding-bottom: 1.2rem;
+  }
+
+  .contact-form-area {
+    padding-left: 0;
+    padding-top: 1.2rem;
+  }
+
+  .contact-form-area form {
+    max-width: 100%;
+  }
+
+  .counters {
+    gap: 1rem;
+  }
+
+  .counter {
+    padding: 0.7rem 1rem;
+  }
+
+  .counter span {
+    font-size: 1.5rem;
+  }
+
+  .certificates-slider {
+    gap: 1rem;
+  }
+
+  .certificate-card {
+    min-width: 200px;
+  }
+}
+
+/* --- Phone: up to 600px --- */
+@media (max-width: 600px) {
+  nav#navbar {
+    padding: 0.7rem 0.8rem;
+    width: 98%;
+    margin: 0.5rem auto;
+  }
+
+  .hero-content {
+    padding: 1.2rem 0.5rem;
+    max-width: 100vw;
+    border-radius: 12px;
+  }
+
+  .hero-main {
+    gap: 1rem;
+  }
+
+  .hero-name {
+    font-size: 1.3rem;
+  }
+
+  .typewriter {
+    font-size: 1.1rem;
+    min-height: 2rem;
+  }
+
+  .hero-brief,
+  .hero-voice {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.1rem;
+  }
+
+  .hero-contacts {
+    gap: 0.8rem;
+  }
+
+  .hero-contact {
+    width: 42px;
+    height: 42px;
+  }
+
+  .about-section,
+  .services-section,
+  .projects-section,
+  .resume-section,
+  .certificates-section,
+  .contact-section,
+  .skills-section,
+  .education-section,
+  .experience-section,
+  .publications-section {
+    margin: 1.5rem auto;
+    padding: 1.2rem 0.7rem;
+    border-radius: 14px;
+    width: 96%;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    min-height: unset;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counters {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .counter {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contact-card {
+    padding: 1.2rem 0.8rem;
+    border-radius: 14px;
+  }
+
+  .contact-avatar img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-title {
+    font-size: 1.2rem;
+  }
+
+  .contact-message {
+    font-size: 0.95rem;
+  }
+
+  .contact-form-area form {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .contact-socials a {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .filter-btns {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .certificates-slider {
+    gap: 0.8rem;
+  }
+
+  .certificate-card {
+    min-width: 180px;
+    padding: 0.7rem;
+  }
+}
+
+/* --- Small Phone: up to 400px --- */
+@media (max-width: 400px) {
+  nav#navbar {
+    padding: 0.5rem 0.5rem;
+    margin: 0.3rem auto;
+  }
+
+  .nav-logo {
+    font-size: 1.15rem;
+  }
+
+  .hero-content {
+    padding: 0.8rem 0.3rem;
+  }
+
+  .hero-name {
+    font-size: 1.1rem;
+  }
+
+  .typewriter {
+    font-size: 1rem;
+    min-height: 1.8rem;
+  }
+
+  .hero-brief,
+  .hero-voice {
+    font-size: 0.88rem;
+  }
+
+  .cta-btn {
+    font-size: 0.88rem;
+    padding: 0.55rem 0.9rem;
+  }
+
+  .hero-actions {
+    gap: 0.7rem;
+  }
+
+  .hero-contact {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-contacts {
+    gap: 0.6rem;
+  }
+
+  .about-section,
+  .services-section,
+  .projects-section,
+  .resume-section,
+  .certificates-section,
+  .contact-section,
+  .skills-section,
+  .education-section,
+  .experience-section,
+  .publications-section {
+    padding: 1rem 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .contact-card {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-form-area button[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .counter span {
+    font-size: 1.3rem;
+  }
+
+  .counter p {
+    font-size: 0.75rem;
+  }
+
+  .publication-card {
+    padding: 1rem 0.7rem;
+  }
+
+  .certificate-card {
+    min-width: 160px;
+  }
+}
