@@ -390,6 +390,8 @@ nav#navbar {
   margin: 3rem auto;
   max-width: 1100px;
   padding: 2.5rem 1.5rem;
+  background: var(--bg);
+  border-radius: 20px;
   box-shadow: var(--shadow);
 }
 
@@ -1042,6 +1044,8 @@ nav#navbar {
   margin: 3rem auto;
   max-width: 900px;
   padding: 2.5rem 1.5rem;
+  background: var(--bg);
+  border-radius: 20px;
   box-shadow: var(--shadow);
 }
 
@@ -1421,36 +1425,51 @@ nav#navbar {
   }
 }
 
-.hero-img img,
-.about-img img {
+.hero-img,
+.about-img {
   width: 350px;
   height: 350px;
   border-radius: 20px;
-  object-fit: contain;
-  object-position: bottom center;
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
   background: var(--primary);
   transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.hero-img img:hover,
-.about-img img:hover {
-  transform: translateY(-4px);
+.hero-img img,
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover,
+.about-img:hover {
   box-shadow: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
 }
 
+.hero-img:hover img,
+.about-img:hover img {
+  transform: scale(1.08);
+}
+
 @media (max-width: 900px) {
-  .hero-img img,
-  .about-img img {
+  .hero-img,
+  .about-img {
     width: 260px;
     height: 260px;
   }
 }
 
 @media (max-width: 600px) {
-  .hero-img img,
-  .about-img img {
+  .hero-img,
+  .about-img {
     width: 200px;
     height: 200px;
     border-radius: 16px;
@@ -1476,14 +1495,20 @@ nav#navbar {
   box-shadow: var(--shadow);
   font-size: 1.8rem;
   color: #fff;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  transition: all 0.2s ease;
   border: 1.5px solid var(--border);
 }
 
 .hero-contact:hover {
   background: var(--accent);
   color: #fff;
-  transform: translateY(-4px) scale(1.08);
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+.hero-contact:active {
+  transform: translateY(2px);
+  box-shadow: var(--inner-shadow);
 }
 
 .resume-download-btn {
@@ -1499,13 +1524,19 @@ nav#navbar {
   padding: 0.9rem 2.2rem;
   margin-bottom: 0.7rem;
   box-shadow: var(--shadow);
-  transition: background 0.2s, transform 0.2s;
+  transition: all 0.2s ease;
 }
 
 .resume-download-btn:hover {
   background: var(--accent);
   color: #fff;
-  transform: translateY(-2px) scale(1.04);
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+.resume-download-btn:active {
+  transform: translateY(2px);
+  box-shadow: var(--inner-shadow);
 }
 
 .icon-download {
@@ -1547,13 +1578,19 @@ nav#navbar {
   padding: 0.9rem 2.2rem;
   margin-bottom: 0.7rem;
   box-shadow: var(--shadow);
-  transition: background 0.2s, transform 0.2s;
+  transition: all 0.2s ease;
 }
 
 .work-btn:hover {
   background: var(--accent);
   color: #fff;
-  transform: translateY(-2px) scale(1.04);
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+.work-btn:active {
+  transform: translateY(2px);
+  box-shadow: var(--inner-shadow);
 }
 
 .icon-whatsapp {
@@ -1602,6 +1639,8 @@ nav#navbar {
   margin: 3rem auto;
   max-width: 1100px;
   padding: 2.5rem 1.5rem;
+  background: var(--bg);
+  border-radius: 20px;
   box-shadow: var(--shadow);
 }
 
