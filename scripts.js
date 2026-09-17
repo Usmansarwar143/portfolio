@@ -75,8 +75,8 @@ if (canvas) {
     for (const p of particles) {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI);
-      ctx.fillStyle = `rgba(58,134,255,${p.alpha})`;
-      ctx.shadowColor = '#3a86ff';
+      ctx.fillStyle = `rgba(15, 76, 92, ${p.alpha})`;
+      ctx.shadowColor = '#0F4C5C';
       ctx.shadowBlur = 12;
       ctx.fill();
       p.x += p.dx; p.y += p.dy;

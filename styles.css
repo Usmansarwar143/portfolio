@@ -198,7 +198,7 @@ nav#navbar {
   bottom: -4px;
   height: 3px;
   border-radius: 2px;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
   z-index: 1;
@@ -1147,7 +1147,7 @@ nav#navbar {
 
 .skill-bar-fill {
   height: 100%;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   border-radius: 6px;
   transition: width 1s;
 }
@@ -1201,7 +1201,7 @@ nav#navbar {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -1222,7 +1222,7 @@ nav#navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   border-radius: 12px;
   position: relative;
 }
@@ -1241,7 +1241,7 @@ nav#navbar {
   font-weight: 700;
   margin-bottom: 0.8rem;
   color: var(--text);
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1423,14 +1423,14 @@ nav#navbar {
 
 .hero-img img,
 .about-img img {
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
   object-fit: contain;
   object-position: bottom center;
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
-  background: transparent;
+  background: var(--primary);
   transition: all 0.3s ease;
 }
 
@@ -1443,16 +1443,16 @@ nav#navbar {
 @media (max-width: 900px) {
   .hero-img img,
   .about-img img {
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 260px;
   }
 }
 
 @media (max-width: 600px) {
   .hero-img img,
   .about-img img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 16px;
   }
 }
@@ -1469,13 +1469,13 @@ nav#navbar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--panel-bg);
   box-shadow: var(--shadow);
-  font-size: 1.5rem;
-  color: var(--primary);
+  font-size: 1.8rem;
+  color: var(--accent);
   transition: background 0.2s, color 0.2s, transform 0.2s;
   border: 1.5px solid var(--border);
 }
@@ -1492,7 +1492,7 @@ nav#navbar {
   gap: 0.5 rem;
   font-weight: 600;
   font-size: 1.1rem;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1503,7 +1503,7 @@ nav#navbar {
 }
 
 .resume-download-btn:hover {
-  background: var(--accent), var(--primary));
+  background: var(--accent);
   color: #fff;
   transform: translateY(-2px) scale(1.04);
 }
@@ -1540,7 +1540,7 @@ nav#navbar {
   gap: 0.5 rem;
   font-weight: 600;
   font-size: 1.1rem;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1548,7 +1548,7 @@ nav#navbar {
   margin-bottom: 0.7rem;
   box-shadow: var(--shadow);
   transition: background 0.2s, transform 0.2s;
-  /* background: var(--accent), var(--primary));
+  /* background: var(--accent);
   color: #fff;
   border: none;
   border-radius: 32px;
@@ -1563,7 +1563,7 @@ nav#navbar {
 }
 
 .work-btn:hover {
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   color: #fff;
   transform: translateY(-2px) scale(1.04);
 }
@@ -1742,7 +1742,7 @@ nav#navbar {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--accent), var(--secondary), var(--accent));
+  background: var(--accent);
   border-radius: 4px 4px 0 0;
 }
 
@@ -1753,7 +1753,7 @@ nav#navbar {
 
 .publication-badge {
   display: inline-block;
-  background: var(--accent), var(--secondary));
+  background: var(--accent);
   color: #fff;
   padding: 0.35rem 1rem;
   border-radius: 20px;
